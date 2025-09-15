@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumnos UDG</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        table {
+            width: 90%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 10px;
+        }
+        thead th {
+            background-color: #d9d9d9;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tfoot td {
+            background-color: #d9d9d9;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Alumnos UDG</h1>
+    <!--Tabla Inicio-->
+    <table>
+        <!--Columna-->
+        <thead>
+            <!--Encabezado-->
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Campus</th>
+                <th>Carrera</th>
+                <th>Código</th>
+                <th>Último ciclo escolar</th>
+            </tr>
+            <!--Fin de Encabezado-->
+        </thead>
+        <!--Fin de Columna-->
+        <!--Inicio del cuerpo de la tabla (Datos)-->
+        <tbody>
+            <!--Inicio de las Filas-->
+            <tr>
+                <td>1</td>
+                <td>Sergio Cervantes</td>
+                <td>CUCEA</td>
+                <td>LTIN</td>
+                <td>215662409</td>
+                <td>2025B</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Sandra Salazar</td>
+                <td>CUCEA</td>
+                <td>LIAD</td>
+                <td>22864542</td>
+                <td>2025B</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Isaac Gonzalez</td>
+                <td>CUCEA</td>
+                <td>LTIN</td>
+                <td>22747420</td>
+                <td>2025B</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Mariana López</td>
+                <td>CUTONALÁ</td>
+                <td>LAE</td>
+                <td>22839105</td>
+                <td>2025A</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Carlos Ramírez</td>
+                <td>CUCEI</td>
+                <td>ITI</td>
+                <td>22798342</td>
+                <td>2024B</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Fernanda Torres</td>
+                <td>CUALTOS</td>
+                <td>CP</td>
+                <td>22910457</td>
+                <td>2025B</td>
+            </tr>
+        </tbody>
+        <!--Fin del cuerpo de la tabla "Datos"-->
+        <!--Inicio del pie de la tabla-->
+        <tfoot>
+            <tr>
+                <td colspan="6">Ciclo escolar 2025B</td>
+            </tr>
+        </tfoot>
+        <!--Fin del pie de la tabla-->
+    </table>
+    <!--Tabla Fin-->
+</body>
+</html>
