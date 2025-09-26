@@ -1,0 +1,116 @@
+*{ 
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+
+}
+
+        /*Fondo del nav*/
+        .menu{
+            background-color: black;
+        }
+        /* Modificar la viñeta de mi lista con list-style*/
+        .menu ul {
+            list-style: none;
+            padding: 10px 16px;
+            margin: 0;
+        }
+        /*Hacer que mi nav se vuelva en linea con display*/
+          .menu li {
+            display: inline;
+            font-size: 20px;
+            color: white;
+          }
+
+        /* Agregar ">" entre los elementos */
+        .menu li+li:before {
+            padding: 0 8px;
+            color: white;
+            content: ">";
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+        }
+        /*Aqui se pone la propiedad hover para cuando pase el cursor*/
+        .menu a:hover {
+            text-decoration: underline;
+        }
+        /*Titulo*/
+        h1 {
+        /* auto en los lados centra horizontalmente */   
+        margin: 10px auto;
+        /* espacio interno */   
+        padding: 20px;        
+        }
+        /*Datos*/
+
+        .Datos ul{
+            list-style: none;
+            padding: 10px 16px;
+            margin: 0;
+
+        }
+
+        .Datos li{
+            display: inline;
+            font-size: 15px;
+            color: black;
+
+        }
+
+        .Datos li+li:before{
+            padding: 0 8px;
+            color: black;
+            content: "|";
+
+        }
+
+        /*Imagen*/
+
+        .img{
+            
+            border-bottom: solid;
+            border-radius:  10px;
+            border-color:  #4D3D39;
+            width:70%;       /* tamaño de la imagen (puedes ajustarlo) */
+            padding:0px;    /* espacio interno opcional */
+            margin: 5px auto;   /* centra la imagen horizontalmente */
+
+        }
+
+        .first, .Second{ 
+            
+            color: #4F4846;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            
+
+        }
+
+        .Third{
+
+            color: #AB9B9A;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            text-decoration: underline;
+            text-decoration-color: red;
+            
+
+        }
+
+        .footer {
+            color: white;
+            background-color: black;
+            width: 100%;       
+            padding: 30px 0px;   
+            text-align: center;         
+        }
+
+        h2,h3{
+            color: #403F3F;
+            font-size: 22px;
+            font-family: Arial, Helvetica, sans-serif;
+            
+
+        }
