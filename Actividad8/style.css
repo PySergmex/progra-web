@@ -1,0 +1,94 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+
+h1{
+    background-color: rgb(255, 255, 255);
+    font-size: 30px;
+    width: 60%;
+    margin: 30px auto;
+    padding: 20px auto;
+    text-align: center;
+}
+
+
+p{
+    font-size: 10px;
+}
+
+table{
+    width: 90%;
+    margin: 3px auto;
+    border-collapse: collapse;
+    text-align: center;
+        }
+td {
+border: 3px solid #ffffff;
+padding: 10px;
+width: 5%;
+height: auto;
+
+}
+
+.first{
+    margin-bottom: 30px;
+}
+
+/* NB (No border)*/
+.NB{
+    border: none;
+}
+
+/*Nombre del elemento*/
+.nam{
+    margin: 1px auto;
+}
+    
+/*Número de elemento (nm)*/
+.nm{
+    height: 1px;
+    text-align: end;
+}      
+
+.green{
+    background-color:#9EC87C;
+}
+
+.red{
+    background-color: #D11F2D;
+    color: white;
+}
+
+.yellow{
+    background-color: #F5A61F;
+    color: #ffffff;
+}
+
+.bluelight{
+    background-color: #9BBFE2;
+}
+
+.blue{
+    background-color: #2696D2;
+    color: #ffffff;
+}
+
+.greenlight{
+    background-color: #76C8A9;
+}
+
+.grey{
+    background-color: #C3C3C3;
+}
+.purple{
+    background-color: #B895C5;
+}
+
+.pink{
+    background-color: #F5B2CA;
+}
+.yelows{
+    background-color: #FDCE0B;
+}
