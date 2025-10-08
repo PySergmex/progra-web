@@ -7,6 +7,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+        <!--Header encabezados y nav-->
+    <header>
+        <nav class="menu">
+            <ul>
+            <li><a href="http://sergioc.atwebpages.com">Inicio</a></li>
+            <li>Activdidad 8</li>
+            </ul>
+        </nav>
+    </header>
     <h1>Tabla Periódica de los elementos</h1>
     <table class="first">
         <tbody>
@@ -15,7 +24,7 @@
                 <!--1-->
                 <td colspan="1" class="green"><p class="nm">1</p><a href="">H</a><p class="nam">Hidrógeno</p></td>
                 <!--2-->
-                <td colspan="17" class="NB"></td>
+                <td colspan="17" class="NB NH" id="1"></td>
                 <!--2-->
                 <td colspan="1" class="pink"><p class="nm">2</p><a href="">He</a><p class="nam">Helio</p></td>      
             </tr>
@@ -26,7 +35,7 @@
                 <!--2-->
                 <td class="yellow"><p class="nm">4</p><a href="#">Be</a><p class="nam">Berilio</p></td>
                 <!--3-->
-                <td colspan="11" class="NB"></td>
+                <td colspan="11" class="NB NH"></td>
                 <!--13-->
                 <td class="yelows"><p class="nm">5</p><a href="#">B</a><p class="nam">Boro</p></td>
                 <!--14-->
@@ -47,7 +56,7 @@
                 <!--2-->
                 <td class="yellow"><p class="nm">12</p><a href="#">Mg</a><p class="nam">Magnesio</p></td>
                 <!--3-->
-                <td colspan="11" class="NB"><a href="#"></a></td>
+                <td colspan="11" class="NB NH"><a href="#"></a></td>
                 <!--13-->
                 <td class="purple"><p class="nm">13</p><a href="#">Ai</a><p class="nam">Aluminio</p></td>
                 <!--14-->
@@ -70,7 +79,7 @@
                 <!--3-->
                 <td class="bluelight"><p class="nm">21</p><a href="#">Sc</a><p class="nam">Escandio</p></td>
                 <!--4-->
-                <td class="NB"></td>
+                <td class="NB NH"></td>
                 <td class="bluelight"><p class="nm">22</p><a href="#">Ti</a><p class="nam">Titanio</p></td>
                 <!--5-->
                 <td class="bluelight"><p class="nm">23</p><a href="#">V</a><p class="nam">Vanadio</p></td>
@@ -110,7 +119,7 @@
                 <!--3-->
                 <td class="bluelight"><p class="nm">39</p><a href="#">Y</a><p class="nam">Itrio</p></td>
                 <!--4-->
-                <td class="NB"></td>
+                <td class="NB NH"></td>
                 <td class="bluelight"><p class="nm">40</p><a href="#">Zr</a><p class="nam">Circonio</p></td>
                 <!--5-->
                 <td class="bluelight"><p class="nm">41</p><a href="#">Nb</a><p class="nam">Niobio</p></td>
@@ -150,7 +159,7 @@
                 <!--3-->
                 <td class="blue"><p class="nm">57</p><a href="#">La</a><p class="nam">Lantano</p></td>
                 <!--4-->
-                <td class="NB"></td>
+                <td class="NB NH"></td>
                 <td class="bluelight"><p class="nm">72</p><a href="#">Hf</a><p class="nam">Hafnio</p></td>
                 <!--5-->
                 <td class="bluelight"><p class="nm">73</p><a href="#">Ta</a><p class="nam">Tántalo</p></td>
@@ -190,7 +199,7 @@
                 <!--3-->
                 <td class="greenlight"><p class="nm">89</p><a href="#">Ac</a><p class="nam">Actinio</p></td>
                 <!--4-->
-                <td class="NB"></td>
+                <td class="NB NH"></td>
                 <td class="bluelight"><p class="nm">104</p><a href="#">Rf</a><p class="nam">Rutherfordio</p></td>
                 <!--5-->
                 <td class="bluelight"><p class="nm">105</p><a href="#">Db</a><p class="nam">Dubnio</p></td>
@@ -224,14 +233,14 @@
         </tbody>
     </table>
 <!--Segunda tabla-->
-    <table>
+    <table class="second">
     <tbody>
         <tr>
             <!--Elementos fantasma-->
-            <td class="NB"></td>
-            <td class="NB"></td>
-            <td class="NB"></td>
-            <td class="NB"></td>
+            <td class="NB NH"></td>
+            <td class="NB NH"></td>
+            <td class="NB NH"></td>
+            <td class="NB NH"></td>
             <!--Elementos segunda tabla-->
             <!--1-->
             <td class="blue"><p class="nm">58</p><a href="#">Ce</a><p class="nam">Cerio</p></td>
@@ -262,14 +271,14 @@
             <!--14-->
             <td class="blue"><p class="nm">71</p><a href="#">Lu</a><p class="nam">Lutecio</p></td>
             <!--Elementos fantasma-->
-            <td class="NB"></td>
+            <td class="NB NH"></td>
         </tr>
         <tr>
             <!--Elementos fantasma-->
-            <td class="NB"></td>
-            <td class="NB"></td>
-            <td class="NB"></td>
-            <td class="NB"></td>
+            <td class="NB NH"></td>
+            <td class="NB NH"></td>
+            <td class="NB NH"></td>
+            <td class="NB NH"></td>
             <!--Elementos segunda tabla-->
             <td class="greenlight"><p class="nm">90</p><a href="#">Th</a><p class="nam">Torio</p></td>
              <!--1-->
@@ -299,11 +308,47 @@
             <!--13-->
             <td class="greenlight"><p class="nm">103</p><a href="#">Lr</a><p class="nam">Lawrencio</p></td>
             <!--Elementos fantasma-->
-            <td class="NB"></td>
+            <td class="NB NH"></td>
         </tr>
     </tbody>
 </table>
+<!--Tercera tabla-->
+<table class="third">
+    <tbody>
+        <tr>
+            <td class="red"></td>
+            <td>Metales alcalínos</td>
+            <td class="yellow"></td>
+            <td>Metales alcalínotérreos</td>
+            <td class="bluelight"></td>
+            <td>Metales transicionales</td>
+            <td class="purple"></td>
+            <td>Metales ponstracionales</td>
+        </tr>
+        <tr>
+            <td class="yelows"></td>
+            <td>Metaloides</td>
+            <td class="green"></td>
+            <td>No metales reactivos</td>
+            <td class="pink"></td>
+            <td>Gases nobles</td>
+            <td class="blue"></td>
+            <td>Lantánidos</td>
+        </tr>
+        <tr>
+            <td class="greenlight"></td>
+            <td>Actonoides</td>
+            <td class="grey"></td>
+            <td>Propiedades desconocidas</td>
+        </tr>
+    </tbody>
+</table>
+    <footer>
+        <div class="footer">
+            <p>© 2025 - Todos los derechos reservados</p>
+            <a href="https://github.com/PySergmex/progra-web/tree/main/Actividad7" target="_blank" rel="noopener noreferrer"><img src="img/git.png" alt="Github"></a>
 
-
+        </div>
+    </footer>
 </body>
 </html>
