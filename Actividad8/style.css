@@ -159,11 +159,16 @@ height: auto;
 .first td:not(.NH):hover {
   background-color: rgba(0, 0, 0, 0.05);
   color: #000;
+  text-decoration: underline;
 }
 
 .second td:not(.NH):hover {
   background-color: rgba(0, 0, 0, 0.05);
   color: #000;
+  text-decoration: underline;
+}
+a{
+    text-decoration: none;
 }
 
 
