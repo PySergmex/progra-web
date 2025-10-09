@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Formulario de ejemplo</h1>
+    <!--Formulario-->
+    <form action="#">
+        <!--Tipo texto-->
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" placeholder="Introduce tu nombre" required maxlength="10">
+        <!--Correo-->
+        <label for="Email">Email:</label>
+        <input type="email" name="correo" id="correo" required>
+        <!--Tipo teléfono-->
+        <label for="tel">Teléfono:</label>
+        <input type="text" name="tel" id="tel">
+        <!--Tipo edad-->
+        <label for="edad">Edad:</label>
+        <input type="number" name="edad" id="edad">
+        <!--Tipo password-->
+        <label for="contrasena">Password:</label>
+        <input type="password" name="contrasena" id="contrasena">
+        <!--Fecha-->
+        <label for="fecha">Fecha:</label>
+        <input type="date" name="fecha" id="fecha">
+        <!--Tipo radio-->
+        <label for="genero">Género</label> 
+            <label for="M">M:</label>
+            <input type="radio" name="genero" id="M" value="M">
+            <label for="F">F:</label>
+            <input type="radio" name="genero" id="F" value="F">
+            <label for="M">Otro:</label>
+            <input type="radio" name="genero" id="O" value="O">
+        
+        
+        <!--Tipo Checkbox-->
+        <label for="intereses">Intereses:</label>
+        <label>Leer:<input type="checkbox" name="Intereses" value="Leer"></label>
+        <label>Caminar:<input type="checkbox" name="Intereses" value="Caminar"></label>
+        <label>Programar:<input type="checkbox" name="Intereses" value="Programar"></label>
+
+        <!--Tipo Seleccion-->
+        <label for="pais">
+            País
+            <select name="pais" id="pais">
+                <option value="">Selecciona un valor:</option>
+                <option value="mx">México</option>
+                <option value="ar">Argentina</option>
+                <option value="es">España</option>
+            </select>
+        </label>
+        <!--Tipo color-->
+        <input type="color">
+        <!--Tipo archivo-->
+        <input  type="file">
+        <!--Tipo rango-->
+        <input type="range">
+        <!--Boton "Enviar"-->
+        <br><br><br>
+        <input type="submit" value="Enviar">
+        <!--Boton "Restablecer"-->
+        <input type="reset" value="Restablecer">
+        <!--Boton prueba-->
+        <button type="sumbit">Hola</button>
+        <!--Boton JS-->
+        <button type="button" onclick="alert('Hola')">Boton JS</button>
+
+    
+    <!--Fin forumlario-->
+    </form>
+    
+    
+    
+</body>
+</html>

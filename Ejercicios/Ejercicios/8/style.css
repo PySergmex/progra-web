@@ -1,0 +1,45 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+    height: 1500px;
+}
+h1{
+    background-color: #F9C600;
+    text-align: center;
+    color: white;
+    padding: 20px 0;
+    position: sticky;
+    top:0;
+    margin-bottom: 20px;
+    width: 100%;
+}
+img{
+    width: 200px;
+    border-radius: 10px;
+
+}
+
+p{
+
+}
+
+#cont{
+    display: flex;
+    /*
+    flex-direction: column;
+    */
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: start;
+}
+
+footer{
+    background-color:blue;
+    color:white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+}

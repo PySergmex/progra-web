@@ -1,0 +1,31 @@
+       *{
+        font-family: Arial, Helvetica, sans-serif;
+       }
+       h2{
+            color:blue;
+            font-size:50px;
+            font-family: Arial;
+        }
+
+        .otroSubtitulo{
+            color: green;
+            font-size: 30px;
+        }
+
+        #SoyunID p{
+            color:black;
+            font-size:30px;
+        }
+
+        #SoyunID{
+            color:blueviolet;
+            font-size:100px;
+        }
+
+        input[type="text"]{
+            font-size: 30px;
+            color:darkgoldenrod;
+        }
+
+       
+
