@@ -1,0 +1,213 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Logo y buscador */
+header {
+    align-items: center;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 10px 30px;
+}
+
+/* Tamaño del label buscador */
+.buscador input {
+    padding: 5px;
+}
+
+/* Navegador */
+.menu {
+    background-color: #d65b63;
+    margin-bottom: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: center;
+    width: 70%;
+}
+
+.menu a {
+    color: white;
+    display: inline-block;
+    font-size: 18px;
+    padding: 20px 70px;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background-color: #b74950;
+}
+
+/* Contenedor principal de las tres columnas (flex) */
+.contenido {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+}
+
+/* Columna izquierda */
+.izquierda {
+    margin-right: 20px; /* Espacio entre izquierda y contenido principal */
+    width: 20%; /* Menú izquierdo (noticias y publicidad) */
+}
+
+/* Backgrounds */
+.otras-noticias {
+    background: #d8d7d7;
+    border: 1px solid #9b9b9b;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.publicidad {
+    background: #FCEFD7;
+    border: 3px dotted #FBC888;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.publicidad p {
+    margin-bottom: 10px;
+}
+
+/* Titulos */
+.otras-noticias h4,
+.publicidad h4 {
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.otras-noticias a {
+    text-decoration: none;
+}
+
+.otras-noticias a:hover {
+    background-color: rgba(255, 0, 0, 0.05);
+    color: #000;
+    text-decoration: underline;
+}
+
+.otras-noticias li {
+    border-bottom: 1px solid #eee;
+    font-size: 13px;
+    padding: 5px 0;
+}
+
+.otras-noticias ul {
+    list-style: none;
+}
+
+.publicidad a {
+    color: #f0a500;
+    text-decoration: none;
+}
+
+/* Columna central */
+.centro {
+    width: 55%;
+}
+
+article {
+    background: rgb(255, 255, 255);
+    border: none;
+    padding: 15px;
+    width: 100%;
+}
+
+article img {
+    float: left;
+    margin-bottom: 50px;
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+}
+
+article h2 {
+    color: #d65b63;
+    margin-bottom: 10px;
+    overflow: hidden; /* Para evitar que el texto se superponga a la imagen */
+}
+
+article p {
+    margin-bottom: 10px;
+}
+
+article a {
+    color: #f0a500;
+    text-decoration: none;
+}
+
+/* Columna derecha */
+.derecha {
+    width: 20%; /* Ajustado para tener el mismo espacio que la columna izquierda */
+}
+
+.derecha h4 {
+    background-color: #1BC1D0;
+    color: white;
+    font-size: 16px;
+    height: 30px;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-align: center;
+}
+
+.derecha a {
+    color: #f0a500;
+    text-decoration: none;
+}
+
+.derecha p {
+    margin-bottom: 10px;
+}
+
+/* Eliminación de borders */
+.menu-secundario {
+    background: white;
+    border: 1px solid #1BC1D0;
+    border-top: none;
+    padding: 10px;
+}
+
+.menu-secundario2 {
+    background: white;
+    border: 1px solid #1BC1D0;
+    border-bottom: none;
+    padding: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #d65b63;
+    color: white;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 30px 0px;
+    text-align: center;
+}
+
+.menu-footer {
+    background: white;
+    border: none;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.menu-footer a {
+    background-color: #ccc;
+    color: black;
+    display: block;
+    margin-bottom: 4px;
+    padding: 8px;
+    text-decoration: none;
+}
+
+.menu-footer a:hover {
+    background-color: #eee;
+}
