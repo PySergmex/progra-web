@@ -1,0 +1,71 @@
+/* style.css */
+body {
+  background-color: rgb(255, 255, 255) !important;
+}
+/* ====== NAV personalizado ====== */
+.nav-pills {    
+  background-color: #000; /* Fondo negro */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.nav-pills .nav-link {
+  color: #fff !important; /* Texto blanco */
+  margin: 0 5px;
+}
+
+/* Hover y efecto al pasar el puntero */
+.nav-pills .nav-link:hover {
+  background-color: #fff !important;
+  color: #000 !important;
+  border-radius: 5px;
+}
+
+/* Estado activo (el botón seleccionado) */
+.nav-pills .nav-link.active {
+  background-color: #575af3 !important; /* Gris oscuro */
+  color: #fff !important;
+  border-radius: 5px;
+}
+/*Actividades*/
+/* ====== Lista de Actividades ====== */
+.actividades-card {
+  background-color: #f0f0f0; /* fondo gris claro del contenedor */
+  border: none;
+}
+
+
+/* Fondo gris de cada elemento */
+.card .list-group-item {
+  background-color: #dcdcdc; /* gris medio */
+  border-bottom: 2px solid #ffffff;
+  padding: 12px 15px;
+}
+
+/* Enlaces dentro de los elementos */
+.card .list-group-item a {
+  text-decoration: none; /* sin subrayado */
+  color: #000; /* texto negro */
+  display: block; /* ocupa todo el área del list item */
+}
+
+/* Hover general: fondo blanco y texto azul */
+.card .list-group-item:hover {
+  background-color: #fff;
+}
+
+.card .list-group-item:hover a {
+  color: #007bff; /* azul Bootstrap */
+  
+}
+
+/*Footer*/
+footer{
+    background-color:rgb(0, 0, 0);
+    color:white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
