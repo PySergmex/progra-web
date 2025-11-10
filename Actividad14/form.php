@@ -103,7 +103,7 @@
   <footer>
     <div class="footer">
       <p>© 2025 - Todos los derechos reservados</p>
-      <a href="#" target="_blank" rel="noopener noreferrer">
+      <a href="https://github.com/PySergmex/progra-web/tree/main/Actividad14" target="_blank" rel="noopener noreferrer">
         <img src="git.png" alt="Icono de Github" width="32" height="32">
       </a>
     </div>
