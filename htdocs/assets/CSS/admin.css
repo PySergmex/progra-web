@@ -1,0 +1,180 @@
+/* =======================================================
+   ADMIN UI – ACADEMIX
+========================================================== */
+
+/* --------- PALETA --------- */
+:root {
+    --primario: #0D1028;
+    --secundario-1: #5146D9;
+    --secundario-2: #6FA8FF;
+    --violeta-suave: #EEE9FF;
+    --gris-claro: #f3f4f7;
+    --gris-borde: #ddd;
+    --blanco: #fff;
+    --texto: #111;
+}
+
+/* --------- LAYOUT GENERAL --------- */
+.admin-dashboard {
+    background: var(--gris-claro);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --------- TOPBAR --------- */
+.topbar {
+    background: var(--primario);
+    color: var(--blanco);
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 28px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+}
+
+.logo-dashboard { width: 120px; }
+
+.user-avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #fff;
+}
+
+.user-avatar img { width: 100%; }
+
+/* --------- SIDEBAR --------- */
+.sidebar-admin {
+    width: 90px;
+    background: var(--violeta-suave);
+    padding-top: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    min-height: calc(100vh - 72px);
+}
+
+.sidebar-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 16px;
+    color: var(--primario);
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+}
+
+.sidebar-icon:hover {
+    background: #d4cfff;
+}
+
+.sidebar-icon.active {
+    background: linear-gradient(135deg, var(--secundario-1), var(--secundario-2));
+    color: var(--blanco);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+}
+
+/* --------- CONTENIDO --------- */
+.content-area {
+    flex: 1;
+    padding: 32px;
+}
+
+/* --------- FORMULARIOS --------- */
+.admin-form-card {
+    background: var(--blanco);
+    border-radius: 18px;
+    padding: 28px;
+    border: 1px solid var(--gris-borde);
+    box-shadow: 0 6px 22px rgba(0,0,0,0.08);
+    max-width: 520px;
+}
+
+/* Campos */
+.admin-form-card input,
+.admin-form-card select {
+    border-radius: 10px;
+}
+
+/* --------- HOVER --------- */
+.admin-form-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+}
+
+/* --------- RESPONSIVE --------- */
+@media (max-width: 768px) {
+    .sidebar-admin { display: none; }
+    .content-area { padding: 16px; }
+}
+/* ================================
+   TOASTS PREMIUM ACADEMIX
+================================= */
+
+.custom-toast {
+    position: fixed;
+    top: -80px;
+    right: 20px;
+    background: #0D1028;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-size: 15px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+    opacity: 0;
+    transform: translateY(-15px);
+    transition: all .35s ease;
+    z-index: 9999;
+}
+
+.custom-toast.show {
+    opacity: 1;
+    top: 20px;
+    transform: translateY(0);
+}
+
+.toast-success {
+    background: #28a745;
+}
+
+.toast-danger {
+    background: #dc3545;
+}
+
+.toast-warning {
+    background: #ffc107;
+    color: #222;
+}
+/* Fade-in suave */
+.fade-in {
+    animation: fadeIn .45s ease forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Aplicarlo a tarjetas automáticamente */
+.admin-form-card,
+.card {
+    opacity: 0;
+    animation: fadeIn .55s ease forwards;
+}
+.premium-alert {
+    border-radius: 14px;
+    font-size: 15px;
+    padding: 14px 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.premium-alert i {
+    font-size: 18px;
+}

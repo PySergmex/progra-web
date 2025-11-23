@@ -1,0 +1,273 @@
+:root {
+    --primario: #0D1028;
+    --secundario-1: #5146D9;
+    --secundario-3: #6FA8FF;
+    --violeta-suave: #D8D3FF;
+    --gris-oscuro: #1A1C2D;
+    --blanco: #FFFFFF;
+}
+
+/* TOPBAR */
+.topbar {
+    background: var(--primario);
+    height: 70px;
+    color: var(--blanco);
+}
+
+.logo-dashboard {
+    width: 120px;
+}
+
+.brand-text {
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.brand-text span {
+    color: var(--secundario-1);
+}
+
+.bienvenido-text {
+    font-size: 14px;
+}
+
+.logout-link {
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.logout-link:hover {
+    text-decoration: underline;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid var(--blanco);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff10;
+}
+
+.user-avatar img {
+    width: 100%;
+    height: auto;
+}
+
+/* SIDEBAR ICONOS */
+.sidebar {
+    width: 80px;
+    background: var(--violeta-suave);
+    border-right: 1px solid rgba(0,0,0,0.05);
+}
+
+.sidebar-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primario);
+    text-decoration: none;
+    margin-bottom: 18px;
+    font-size: 22px;
+    transition: all 0.2s ease;
+}
+
+.sidebar-icon:hover {
+    background: #c3bbff;
+    color: var(--primario);
+    transform: translateY(-2px);
+}
+
+.sidebar-icon.active {
+    background: var(--secundario-1);
+    color: var(--blanco);
+}
+
+/* CONTENIDO PRINCIPAL */
+/* El layout general ocupa todo el ancho y alto */
+.dashboard-estudiante {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* La zona que tiene sidebar + contenido debe crecer y usar todo el espacio */
+.dashboard-estudiante > .flex-grow-1 {
+    flex: 1;
+    display: flex;
+}
+
+/* Área de contenido */
+.content-area {
+    flex: 1;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    /* el padding se lo das con Bootstrap: p-4 */
+}
+
+/* CARDS RESUMEN */
+.resumen-card {
+    border-radius: 18px;
+    border: none;
+    background: #f7f5ff;
+    padding: 18px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+}
+
+.resumen-card h5 {
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.resumen-card p {
+    font-size: 13px;
+    color: #555;
+}
+
+.resumen-number {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--secundario-1);
+}
+
+/* MATERIAS LISTA (por si la usas en otro lado) */
+.materias-card {
+    border-radius: 18px;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.materias-card .card-header {
+    background: #f0efff;
+    border-bottom: none;
+    border-radius: 18px 18px 0 0;
+}
+
+.materia-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.materia-item:last-child {
+    border-bottom: none;
+}
+
+/* -------- HORARIOS -------- */
+.horarios-card {
+    border-radius: 18px;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.horario-item {
+    padding: 8px 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+}
+
+.horario-item:last-child {
+    border-bottom: none;
+}
+
+/* -------- STATUS MATERIAS -------- */
+.materias-status-card {
+    border-radius: 18px;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.status-number {
+    display: inline-block;
+    min-width: 40px;
+    text-align: center;
+    padding: 6px 10px;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+}
+
+.status-number.aprobado {
+    background-color: #28a745; /* verde */
+}
+
+.status-number.pendiente {
+    background-color: #FFC107; /* amarillo */
+    color: #333;
+}
+
+/* ===================================== */
+/*   GRID FINAL DEL DASHBOARD            */
+/* ===================================== */
+
+.dashboard-wrapper {
+    display: grid;
+    grid-template-columns: 260px minmax(0, 1.8fr) 320px;
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+    width: 100%;
+}
+
+/* 1) Gráfica de barras: fila completa */
+.grid-bar {
+    grid-column: 1 / 4;
+}
+
+/* 2.1) columna izquierda: resumen */
+.grid-resumen {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* 2.2) columna central: donut */
+.grid-donut {
+    display: flex;
+}
+
+/* 2.3) columna derecha: horarios */
+.grid-horarios {
+    display: flex;
+    flex-direction: column;
+}
+
+/* 3) fila completa: estado materias */
+.grid-status {
+    grid-column: 1 / 4;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+    .dashboard-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-bar,
+    .grid-status {
+        grid-column: 1 / 2;
+    }
+
+    .grid-resumen {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .grid-resumen .resumen-card {
+        flex: 1 1 100%;
+    }
+}
+
+
+
+
